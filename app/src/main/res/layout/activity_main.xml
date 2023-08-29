@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/wood_floor"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/btnKick"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/parchebombo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTom1" />
+
+    <ImageView
+        android:id="@+id/btnSnare"
+        android:layout_width="126dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnKick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHitHat"
+        android:src="@drawable/parche" />
+
+    <ImageView
+        android:id="@+id/btnTom1"
+        android:layout_width="117dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnKick"
+        app:layout_constraintEnd_toStartOf="@+id/btnTom2"
+        app:layout_constraintStart_toEndOf="@+id/btnSnare"
+        app:layout_constraintTop_toBottomOf="@+id/btnCrash"
+        android:src="@drawable/parche" />
+
+    <ImageView
+        android:id="@+id/btnTom2"
+        android:layout_width="114dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="-2dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnKick"
+        app:layout_constraintEnd_toStartOf="@+id/btnRide"
+        app:layout_constraintStart_toEndOf="@+id/btnTom1"
+        app:layout_constraintTop_toBottomOf="@+id/btnCrash"
+        android:src="@drawable/parche" />
+
+    <ImageView
+        android:id="@+id/btnFloor"
+        android:layout_width="125dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnKick"
+        app:layout_constraintTop_toBottomOf="@+id/btnTom2"
+        android:src="@drawable/parche" />
+
+    <ImageView
+        android:id="@+id/btnHitHat"
+        android:layout_width="115dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="-25dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSnare"
+        app:layout_constraintEnd_toStartOf="@+id/btnTom1"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toEndOf="@+id/btnSnare"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61"
+        android:src="@drawable/hithat"/>
+
+    <ImageView
+        android:id="@+id/btnCrash"
+        android:layout_width="115dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="-13dp"
+        android:src="@drawable/crash"
+        app:layout_constraintBottom_toTopOf="@+id/btnTom2"
+        app:layout_constraintEnd_toStartOf="@+id/btnRide"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnHitHat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnRide"
+        android:layout_width="115dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="79dp"
+        android:src="@drawable/ride"
+        app:layout_constraintBottom_toTopOf="@+id/btnFloor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTom2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:backgroundTint="@color/red"
+        tools:layout_editor_absoluteX="627dp"
+        tools:layout_editor_absoluteY="36dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
